@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario aqui</h1>
+    <form>
+        <label for="Campo_Nome">Nome:</label>
+        <input id="Campo_Nome" type="text" placeholder="Digite seu nome aqui">
+        <br><br>
+        <label for="Campo_Sobre">SobreNome</label>
+        <input id="Campo_Sobre" type="text" placeholder="Digite seu Sobrenome" required>
+        <br><br>
+        <label for="Campo_Senha">Senha</label>
+        <input id="Campo_Senha" type="password" placeholder="Digite sua senha aqui" required>
+        <br><br>
+        <label for="Campo_email">Email</label>
+        <input id="Campo_email" type="email" placeholder="Digite seu email aqui" required>
+        <br><br>
+        <h2>Animal de estimação</h2>
+        <input type="radio" name="Animal" value="Cachorro" id="cachorro">
+        <label for="cachorro">Cachorro</label><br><br>
+        <input type="radio" name="Animal" value="Gato" id="Gato">
+        <label for="Gato">Gato</label><br><br>
+        <input type="radio" name="Animal" value="Passaro" id="Passaro">
+        <label for="Passaro">Passaro</label><br><br>
+        <!--criar multiplas escolhas-->
+        <input id="Item1" type="checkbox" name="Item1" value="Computador">
+        <label for="Item1">Computador</label><br>
+
+        <input id="Item2" type="checkbox" name="Item2" value="Tv">
+        <label for="Item2">Tv</label><br>
+
+        <input id="Item3" type="checkbox" name="Item3" value="Geladeira">
+        <label for="Item3">Geladeira</label><br><br>
+        <!--criar multiplas escolhas-->
+        <h2>Escolha uma cor:</h2>
+        <Select name="Cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="rosa">Rosa</option>
+        </Select><br><br>
+        <!--Criar um campo para a pessoa digitar uma mensagem-->
+        <h2>Digite um texto</h2>
+        <br>
+        <textarea rows="15" cols="35" placeholder="Escreva um texto"></textarea><br><br>
+
+        <br><br>
+         <hr>
+        <input type="submit" value="ENVIAR">
+    </form>
+    <hr>
+    <a href="index.html">voltar para a principal</a>
+</body>
+</html>
